@@ -1,0 +1,50 @@
+﻿@model SRSWebApplication.Models.TAAssignments
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TAAssignments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignmentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Courses.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Courses.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudyTerms.TermName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudyTerms.TermName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TAGraders.TAFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TAGraders.TAFirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TAAssignmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
